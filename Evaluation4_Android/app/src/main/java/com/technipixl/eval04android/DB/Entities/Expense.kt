@@ -7,8 +7,8 @@ import java.util.*
 @Entity
 data class Expense(
     @PrimaryKey(autoGenerate = true)
-    var genreId: Long = 0,
-    var date : Date?,
+    var expenseId: Long = 0,
+    var date : String?,
     var name: String?,
     var value : Float?
 )

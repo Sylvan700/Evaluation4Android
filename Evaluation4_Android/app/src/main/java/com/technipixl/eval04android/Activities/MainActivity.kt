@@ -1,7 +1,8 @@
-package com.technipixl.eval04android
+package com.technipixl.eval04android.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.technipixl.eval04android.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
