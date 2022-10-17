@@ -18,7 +18,9 @@ class ExpenseAdapter(private var expensesModel: List<Expense>, private val click
     class ExpenseRowHolder(private var viewBinding : CellBinding) : RecyclerView.ViewHolder(viewBinding.root) {
 
         fun bind(expense: Expense, clickListener:OnItemClickListener){
-            //toDO
+            viewBinding.textViewDate.text = expense.date
+            viewBinding.textViewExpenseName.text = expense.name
+            viewBinding.textViewPrice.text = expense.value.toString()
             itemView.setOnClickListener{
                 clickListener.onItemClicked(expense)
             }
